@@ -1,12 +1,29 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400&family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --bg-0: #02020F;
+  --bg-1: #05051A;
+  --bg-2: #080820;
+  --gold: #F59E0B;
+  --gold-light: #FCD34D;
+  --violet: #8B5CF6;
+  --cyan: #06B6D4;
+  --pink: #F472B6;
+  --border: rgba(245,158,11,0.08);
+  --border-glow: rgba(245,158,11,0.3);
+}
+
 * { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; }
-body { background: #020617; color: white; font-family: 'Inter', sans-serif; overflow-x: hidden; }
+body { background: var(--bg-0); color: white; font-family: 'Inter', sans-serif; overflow-x: hidden; }
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: var(--bg-0); }
+::-webkit-scrollbar-thumb { background: linear-gradient(var(--gold), var(--violet)); border-radius: 4px; }
+::selection { background: rgba(245,158,11,0.3); }
 
 /* Gold shimmer text */
 .gold-shimmer {
@@ -21,6 +38,98 @@ body { background: #020617; color: white; font-family: 'Inter', sans-serif; over
   0% { background-position: 0% center; }
   100% { background-position: 300% center; }
 }
+
+/* Animated grid background */
+.grid-bg {
+  background-image:
+    linear-gradient(rgba(245,158,11,0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(245,158,11,0.04) 1px, transparent 1px);
+  background-size: 60px 60px;
+  animation: gridDrift 40s linear infinite;
+}
+@keyframes gridDrift {
+  0% { background-position: 0 0; }
+  100% { background-position: 60px 60px; }
+}
+
+/* Noise grain overlay */
+.grain::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.025'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 1;
+  border-radius: inherit;
+}
+
+/* Marquee */
+.marquee-track {
+  display: inline-flex;
+  gap: 20px;
+  animation: marquee 30s linear infinite;
+  white-space: nowrap;
+}
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* Service card left-border hover */
+.svc-card-adv { position: relative; overflow: hidden; }
+.svc-card-adv::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 3px; height: 0;
+  border-radius: 3px 0 0 3px;
+  transition: height 0.4s ease;
+}
+.svc-card-adv:hover::before { height: 100%; }
+.svc-card-adv .svc-arrow {
+  opacity: 0;
+  transform: translateX(-8px);
+  transition: all 0.3s;
+  display: inline-block;
+}
+.svc-card-adv:hover .svc-arrow { opacity: 1; transform: translateX(0); }
+
+/* Eyebrow / mono tag */
+.mono-tag {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+/* Blinking cursor dot */
+.blink-dot {
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  background: #F59E0B;
+  animation: blinkDot 1.5s ease-in-out infinite;
+}
+@keyframes blinkDot { 0%,100%{opacity:1} 50%{opacity:0.2} }
+
+/* Bar chart animation */
+@keyframes barGrow {
+  from { transform: scaleY(0); }
+  to { transform: scaleY(1); }
+}
+.bar-grow { animation: barGrow 0.6s ease-out both; transform-origin: bottom; }
+
+/* Badge float animations */
+@keyframes badgeFloat  { 0%,100%{transform:translateY(0) rotate(-1deg)} 50%{transform:translateY(-10px) rotate(1deg)} }
+@keyframes badgeFloat2 { 0%,100%{transform:translateY(0) rotate(1deg)} 50%{transform:translateY(-8px) rotate(-1deg)} }
+@keyframes badgeFloat3 { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-12px)} }
+
+/* Typewriter cursor */
+.tw-cursor { display:inline-block; width:3px; background:#F59E0B; animation:twBlink 0.8s ease-in-out infinite; margin-left:2px; }
+@keyframes twBlink { 0%,100%{opacity:1} 50%{opacity:0} }
+
+/* Process connecting line */
+@keyframes drawLine { from{transform:scaleX(0)} to{transform:scaleX(1)} }
+.process-line { animation: drawLine 2s ease-out 0.5s both; transform-origin: left; }
 
 /* Gradient text */
 .gradient-text {
