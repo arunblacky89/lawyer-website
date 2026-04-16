@@ -83,7 +83,7 @@ const TESTIMONIALS = [
   {
     name: 'Rajesh Kumar',
     role: 'Business Owner, Chennai',
-    text: 'Karthikeyan sir handled my property dispute with exceptional skill. His in-depth knowledge of Tamil Nadu land laws saved my family home. Highly recommended!',
+    text: 'Sahayaraj sir handled my property dispute with exceptional skill. His in-depth knowledge of Tamil Nadu land laws saved my family home. Highly recommended!',
     stars: 5,
     avatar: 'R',
     color: '#f59e0b',
@@ -254,7 +254,7 @@ function Navbar() {
             <Scale size={20} className="text-slate-900" />
           </div>
           <div>
-            <div className="font-display font-bold text-white text-sm leading-tight">Adv. S. Karthikeyan</div>
+            <div className="font-display font-bold text-white text-sm leading-tight">Adv. Sahayaraj</div>
             <div className="text-amber-400 text-xs">Madras High Court</div>
           </div>
         </div>
@@ -270,7 +270,7 @@ function Navbar() {
 
         {/* CTA */}
         <a
-          href="https://wa.me/919999999999"
+          href="https://wa.me/919442760535"
           className="hidden md:flex btn-gold px-5 py-2.5 rounded-full text-sm items-center gap-2"
           target="_blank" rel="noreferrer"
         >
@@ -298,7 +298,7 @@ function Navbar() {
                 {l}
               </button>
             ))}
-            <a href="https://wa.me/919999999999" target="_blank" rel="noreferrer" className="mt-4 btn-gold flex items-center justify-center gap-2 px-5 py-3 rounded-full text-sm w-full">
+            <a href="https://wa.me/919442760535" target="_blank" rel="noreferrer" className="mt-4 btn-gold flex items-center justify-center gap-2 px-5 py-3 rounded-full text-sm w-full">
               <span className="flex items-center gap-2"><Phone size={14} /> Free Consultation</span>
             </a>
           </motion.div>
@@ -347,7 +347,7 @@ function Hero() {
 
             <div className="flex flex-col sm:flex-row gap-4">
               <a
-                href="https://wa.me/919999999999?text=Hello%20Advocate%20Karthikeyan,%20I%20need%20legal%20consultation"
+                href="https://wa.me/919442760535?text=Hello%20Advocate%20Sahayaraj,%20I%20need%20legal%20consultation"
                 target="_blank" rel="noreferrer"
                 className="btn-gold flex items-center justify-center gap-2 px-8 py-4 rounded-full text-base"
               >
@@ -396,7 +396,7 @@ function Hero() {
                 <Scale size={64} className="text-slate-900" />
               </div>
 
-              <h2 className="font-display text-2xl font-bold text-white mb-1">Adv. S. Karthikeyan</h2>
+              <h2 className="font-display text-2xl font-bold text-white mb-1">Adv. Sahayaraj</h2>
               <p className="text-amber-400 text-sm font-medium mb-1">B.L., M.L.</p>
               <p className="text-slate-400 text-xs mb-6">Madras High Court • Bar Council of Tamil Nadu</p>
 
@@ -546,7 +546,7 @@ function About() {
               A Legacy of <span className="gold-shimmer">Justice</span>
             </h2>
             <p className="text-slate-400 leading-relaxed mb-6">
-              Advocate S. Karthikeyan is a distinguished legal practitioner with over 25 years of experience in the Madras High Court and subordinate courts across Tamil Nadu. Known for his sharp legal acumen, strategic thinking, and relentless advocacy, he has built a reputation as one of the most trusted lawyers in the region.
+              Advocate Sahayaraj is a distinguished legal practitioner with over 25 years of experience in the Madras High Court and subordinate courts across Tamil Nadu. Known for his sharp legal acumen, strategic thinking, and relentless advocacy, he has built a reputation as one of the most trusted lawyers in the region.
             </p>
             <p className="text-slate-400 leading-relaxed mb-8">
               From complex criminal trials to sensitive family matters, property disputes to corporate agreements — his breadth of expertise ensures every client receives the most informed and effective representation possible.
@@ -568,7 +568,7 @@ function About() {
             </div>
 
             <a
-              href="https://wa.me/919999999999"
+              href="https://wa.me/919442760535"
               target="_blank" rel="noreferrer"
               className="btn-gold inline-flex items-center gap-2 px-8 py-4 rounded-full"
             >
@@ -626,7 +626,7 @@ function WhyUs() {
         >
           <div className="section-label mx-auto mb-4"><Shield size={12} /> Why Choose Us</div>
           <h2 className="font-display text-4xl md:text-5xl font-bold text-white mb-4">
-            The <span className="gold-shimmer">Karthikeyan</span> Advantage
+            The <span className="gold-shimmer">Sahayaraj</span> Advantage
           </h2>
           <p className="text-slate-400 max-w-2xl mx-auto">
             What sets us apart is not just experience — it's our uncompromising commitment to your justice.
@@ -832,8 +832,8 @@ function Contact() {
 
   const handleWA = (e: React.FormEvent) => {
     e.preventDefault();
-    const text = `Hello Advocate Karthikeyan,\n\nName: ${form.name}\nPhone: ${form.phone}\nLegal Issue: ${form.issue}\n\nMessage: ${form.message}`;
-    window.open(`https://wa.me/919999999999?text=${encodeURIComponent(text)}`, '_blank');
+    const text = `Hello Advocate Sahayaraj,\n\nName: ${form.name}\nPhone: ${form.phone}\nLegal Issue: ${form.issue}\n\nMessage: ${form.message}`;
+    window.open(`https://wa.me/919442760535?text=${encodeURIComponent(text)}`, '_blank');
   };
 
   return (
@@ -931,18 +931,18 @@ function Contact() {
               {
                 icon: Phone,
                 label: 'Call / WhatsApp',
-                value: '+91 99999 99999',
+                value: '+91 94427 60535',
                 sub: 'Available 9 AM – 9 PM',
                 color: '#10b981',
-                href: 'tel:+919999999999',
+                href: 'tel:+919442760535',
               },
               {
                 icon: Mail,
                 label: 'Email',
-                value: 'adv.karthikeyan@gmail.com',
+                value: 'adv.sahayaraj@gmail.com',
                 sub: 'Reply within 24 hours',
                 color: '#3b82f6',
-                href: 'mailto:adv.karthikeyan@gmail.com',
+                href: 'mailto:adv.sahayaraj@gmail.com',
               },
               {
                 icon: MapPin,
@@ -1006,7 +1006,7 @@ function Footer() {
                 <Scale size={20} className="text-slate-900" />
               </div>
               <div>
-                <div className="font-display font-bold text-white">Adv. S. Karthikeyan</div>
+                <div className="font-display font-bold text-white">Adv. Sahayaraj</div>
                 <div className="text-amber-400 text-xs">B.L., M.L. — Madras High Court</div>
               </div>
             </div>
@@ -1034,15 +1034,15 @@ function Footer() {
           <div>
             <h4 className="text-white font-semibold text-sm mb-4">Contact</h4>
             <ul className="space-y-3">
-              <li className="flex items-center gap-2 text-slate-500 text-sm"><Phone size={14} className="text-amber-400" /> +91 99999 99999</li>
-              <li className="flex items-center gap-2 text-slate-500 text-sm"><Mail size={14} className="text-amber-400" /> adv.karthikeyan@gmail.com</li>
+              <li className="flex items-center gap-2 text-slate-500 text-sm"><Phone size={14} className="text-amber-400" /> +91 94427 60535</li>
+              <li className="flex items-center gap-2 text-slate-500 text-sm"><Mail size={14} className="text-amber-400" /> adv.sahayaraj@gmail.com</li>
               <li className="flex items-start gap-2 text-slate-500 text-sm"><MapPin size={14} className="text-amber-400 mt-0.5 flex-shrink-0" /> High Court Complex, Chennai</li>
             </ul>
           </div>
         </div>
 
         <div className="border-t border-white/5 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-slate-600 text-xs">© 2024 Advocate S. Karthikeyan. All rights reserved.</p>
+          <p className="text-slate-600 text-xs">© 2024 Advocate Sahayaraj. All rights reserved.</p>
           <p className="text-slate-600 text-xs">Bar Council of Tamil Nadu | Madras High Court</p>
         </div>
       </div>
@@ -1055,7 +1055,7 @@ function Footer() {
 function WhatsAppFloat() {
   return (
     <a
-      href="https://wa.me/919999999999?text=Hello%20Advocate%20Karthikeyan,%20I%20need%20legal%20consultation"
+      href="https://wa.me/919442760535?text=Hello%20Advocate%20Sahayaraj,%20I%20need%20legal%20consultation"
       target="_blank"
       rel="noreferrer"
       className="wa-float"
