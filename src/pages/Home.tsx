@@ -61,7 +61,7 @@ const STATS = [
 ];
 
 const TESTIMONIALS = [
-  { name: 'Rajesh Kumar',  role: { en: 'Business Owner, Chennai',     ta: 'வணிகர், சென்னை'         }, text: { en: 'Sahayaraj sir handled my property dispute with exceptional skill. His in-depth knowledge of Tamil Nadu land laws saved my family home. Highly recommended!', ta: 'சாகயராஜ் சார் என் சொத்து தகராற்றை அசாதாரண திறனோடு கையாண்டார். தமிழ்நாடு நில சட்டங்கள் பற்றிய அவரது ஆழமான அறிவு என் குடும்ப வீட்டைக் காப்பாற்றியது. மிகவும் பரிந்துரைக்கிறேன்!' }, stars: 5, avatar: 'R', color: '#f59e0b' },
+  { name: 'Rajesh Kumar',  role: { en: 'Business Owner, Chennai',     ta: 'வணிகர், சென்னை'         }, text: { en: 'Sahayaraj sir handled my property dispute with exceptional skill. His in-depth knowledge of Tamil Nadu land laws saved my family home. Highly recommended!', ta: 'சஹாயராஜ் சார் என் சொத்து தகராற்றை அசாதாரண திறனோடு கையாண்டார். தமிழ்நாடு நில சட்டங்கள் பற்றிய அவரது ஆழமான அறிவு என் குடும்ப வீட்டைக் காப்பாற்றியது. மிகவும் பரிந்துரைக்கிறேன்!' }, stars: 5, avatar: 'R', color: '#f59e0b' },
   { name: 'Priya Sundar',  role: { en: 'IT Professional, Coimbatore', ta: 'IT நிபுணர், கோயம்புத்தூர்'}, text: { en: 'During my divorce proceedings, he was not just my lawyer but a pillar of support. He got me fair maintenance and custody with minimal stress.',              ta: 'என் விவாகரத்து வழக்கின் போது, அவர் வெறும் வக்கீல் மட்டுமல்ல, ஒரு தூண் போல் ஆதரவாக இருந்தார். குறைந்த மன அழுத்தத்துடன் நியாயமான ஜீவனாம்சமும் காவலும் பெற்றேன்.' }, stars: 5, avatar: 'P', color: '#ec4899' },
   { name: 'Murugan S.',    role: { en: 'Contractor, Madurai',         ta: 'ஒப்பந்ததாரர், மதுரை'      }, text: { en: 'Got anticipatory bail within 24 hours. His contacts and courtroom presence in Madras High Court are unmatched. True professional.',                            ta: '24 மணி நேரத்தில் ஊகிக்கப்பட்ட ஜாமீன் கிடைத்தது. மெட்ராஸ் உயர் நீதிமன்றத்தில் அவரது தொடர்புகளும் நீதிமன்ற முன்னிலையும் தனித்துவமானது.' }, stars: 5, avatar: 'M', color: '#3b82f6' },
   { name: 'Lakshmi Venkat',role: { en: 'Teacher, Salem',              ta: 'ஆசிரியை, சேலம்'           }, text: { en: 'My consumer case against a builder was won in just 6 months. Transparent fees, regular updates, and complete dedication to my case.',                          ta: 'கட்டிட ஒப்பந்தக்காரர் மீதான என் நுகர்வோர் வழக்கு 6 மாதத்தில் வெற்றி பெற்றது. வெளிப்படையான கட்டணம், தொடர் தகவல்கள் மற்றும் முழு அர்ப்பணிப்பு.' }, stars: 5, avatar: 'L', color: '#10b981' },
@@ -273,7 +273,7 @@ function Navbar() {
           </div>
           <div>
             <div className="font-display font-bold text-white text-sm leading-tight">
-              {lang === 'ta' ? 'வக்கீல். சாகயராஜ்' : 'Adv. Sahayaraj'}
+              {lang === 'ta' ? 'வக்கீல். சஹாயராஜ்' : 'Adv. Sahayaraj'}
             </div>
             <div className="mono-tag text-[9px] text-amber-400/70">
               {lang === 'ta' ? '// மெட்ராஸ் உயர் நீதிமன்றம்' : '// MADRAS HIGH COURT'}
@@ -520,7 +520,7 @@ function About() {
             </h2>
             <p className="text-slate-400 leading-relaxed mb-6">
               {lang === 'ta'
-                ? 'வக்கீல். சாகயராஜ் மெட்ராஸ் உயர் நீதிமன்றம் மற்றும் தமிழ்நாடு முழுவதும் கீழ் நீதிமன்றங்களில் 25 ஆண்டுகளுக்கும் மேலான அனுபவம் வாய்ந்த சிறந்த சட்ட நடைமுறையாளர். கூர்மையான சட்ட அறிவு, மூலோபாய சிந்தனை மற்றும் இடைவிடாத வாதாட்டத்திற்கு பெயர் பெற்றவர்.'
+                ? 'வக்கீல். சஹாயராஜ் மெட்ராஸ் உயர் நீதிமன்றம் மற்றும் தமிழ்நாடு முழுவதும் கீழ் நீதிமன்றங்களில் 25 ஆண்டுகளுக்கும் மேலான அனுபவம் வாய்ந்த சிறந்த சட்ட நடைமுறையாளர். கூர்மையான சட்ட அறிவு, மூலோபாய சிந்தனை மற்றும் இடைவிடாத வாதாட்டத்திற்கு பெயர் பெற்றவர்.'
                 : 'Advocate Sahayaraj is a distinguished legal practitioner with over 25 years of experience in the Madras High Court and subordinate courts across Tamil Nadu. Known for sharp legal acumen, strategic thinking, and relentless advocacy.'}
             </p>
             <p className="text-slate-400 leading-relaxed mb-8">
@@ -582,7 +582,7 @@ function WhyUs() {
           <div className="mono-tag text-[11px] text-amber-400/70 mb-3">{lang === 'ta' ? '// ஏன் எங்களை தேர்ந்தெடுக்கணும்' : '// WHY CHOOSE US'}</div>
           <div className="section-label mx-auto mb-4 inline-flex"><Shield size={12} />{lang === 'ta' ? 'நன்மைகள்' : 'The Advantage'}</div>
           <h2 className="font-display text-4xl md:text-5xl font-bold text-white mb-4">
-            {lang === 'ta' ? <><span className="gold-shimmer">சாகயராஜ்</span> நன்மை</> : <>The <span className="gold-shimmer">Sahayaraj</span> Advantage</>}
+            {lang === 'ta' ? <><span className="gold-shimmer">சஹாயராஜ்</span> நன்மை</> : <>The <span className="gold-shimmer">Sahayaraj</span> Advantage</>}
           </h2>
         </motion.div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -863,7 +863,7 @@ function Footer() {
                 <Scale size={20} className="text-slate-900" />
               </div>
               <div>
-                <div className="font-display font-bold text-white">{lang === 'ta' ? 'வக்கீல். சாகயராஜ்' : 'Adv. Sahayaraj'}</div>
+                <div className="font-display font-bold text-white">{lang === 'ta' ? 'வக்கீல். சஹாயராஜ்' : 'Adv. Sahayaraj'}</div>
                 <div className="mono-tag text-[9px] text-amber-400/60">// B.L., M.L. — {lang === 'ta' ? 'மெட்ராஸ் உயர் நீதிமன்றம்' : 'MADRAS HIGH COURT'}</div>
               </div>
             </div>
@@ -888,7 +888,7 @@ function Footer() {
           </div>
         </div>
         <div className="border-t border-white/5 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-slate-600 mono-tag text-[10px]">© 2024 {lang === 'ta' ? 'வக்கீல். சாகயராஜ். அனைத்து உரிமைகளும் பாதுகாக்கப்பட்டுள்ளன.' : 'Advocate Sahayaraj. All rights reserved.'}</p>
+          <p className="text-slate-600 mono-tag text-[10px]">© 2024 {lang === 'ta' ? 'வக்கீல். சஹாயராஜ். அனைத்து உரிமைகளும் பாதுகாக்கப்பட்டுள்ளன.' : 'Advocate Sahayaraj. All rights reserved.'}</p>
           <p className="text-slate-600 mono-tag text-[10px]">{lang === 'ta' ? 'தமிழ்நாடு பார் கவுன்சில் | மெட்ராஸ் உயர் நீதிமன்றம்' : 'Bar Council of Tamil Nadu | Madras High Court'}</p>
         </div>
       </div>
